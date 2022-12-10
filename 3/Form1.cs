@@ -123,10 +123,34 @@ namespace _3
 
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
-
+            Form2 create = new Form2();
+            create.ShowDialog();
+            
         }
 
         private void файлToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateBlank(1000, 1000);
+        }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.ShowDialog();
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.ShowDialog();
+        }
+
+        private void выходToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
